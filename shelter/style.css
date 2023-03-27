@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, p {
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.btn {
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.rest a, .make a {
+    color: inherit;
+}
+
+.about-wrap, .donation-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about, .pets, .help, .donation {
+    padding: 80px 0 100px;
+}
+
+.about, .help {
+    background: #FFFFFF;
+}
+
+.pets, .donation {
+    background-color: #F6F6F6;
+}
+
+header {
+    background-image: radial-gradient(96.22% 577.55% at 97.96% 3.53%, #19191B 0%, #433429 100%);
+    background-size: cover;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.item_cozy {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.navigation a {
+    margin-right: 35px;
+}
+
+.active:active {
+    border-bottom: 3px solid #F1CDB3;
+}
+
+.cozy-head {
+    color: #F1CDB3;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cozy_head_sub {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+}
+
+.header_sab {
+    margin: 42px 0;
+    color: #CDCDCD;
+    font-family: 'Arial', serif;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.header_content {
+    display: flex;
+    padding-top: 90px;
+}
+
+.header_text {
+    padding: 163px 42px 0 0;
+}
+
+
+.header-head {
+    font-size: 44px;
+    color: #FFFFFF;
+    max-width: 310px;
+}
+
+.make.btn {
+    padding: 15px 45px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;
+    max-width: 207px;
+    max-height: 52px;
+}
+
+/*HEADER END*/
+
+
+.about-text {
+    padding-right: 175px
+}
+
+.about_head {
+    padding-right: 60px;
+    margin: 0 0 25px;
+}
+
+.about_subheading p {
+    font-family: Arial, sans-serif;
+    max-width: 430px;
+    margin: 0 0 25px;
+    font-size: 15px;
+    color: #4C4C4C;
+    line-height: 1.6;
+}
+
+.about_p {
+    -webkit-text-stroke: 0.05rem #4C4C4C;
+    text-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about img {
+    padding: 0 120px 0 175px;
+}
+
+
+/*PETS START*/
+.pets-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pets-head {
+    align-self: center;
+    white-space: pre-line;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.slider_item {
+    background: #FFFFFF;
+    text-align: center;
+}
+
+
+.slider_item img {
+    margin-bottom: 30px;
+}
+
+.slider_item p {
+    font-size: 20px;
+    line-height: 23px;
+    color: #545454;
+    margin-bottom: 30px;
+}
+
+.learn_more {
+    width: 187px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    background-color: #FAFAFA;
+    font-size: 17px;
+    color: #292929;
+    margin-bottom: 45px;
+}
+
+.rest {
+    align-self: center;
+    font-size: 17px;
+    width: 261px;
+    height: 52px;
+    background: #F1CDB3;
+    border: 1px solid #F1CDB3;
+    border-radius: 100px;
+}
+
+
+.arrow {
+    background-color: #F6F6F6;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+}
+
+
+/*HELP START*/
+
+
+.help-head {
+    margin: 0 auto 60px;
+    text-align: center;
+    max-width: 310px;
+}
+
+.flex-container {
+    text-align: center;
+    max-width: 1026px;
+    margin: 0 auto;
+}
+
+.item1, .item2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+}
+
+.item2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 84px;
+}
+
+.flex-container p {
+    font-size: 20px;
+    color: #545454;
+}
+
+.flex-container img {
+    margin-bottom: 30px;
+}
+
+
+/*HELP END*/
+
+.donation-head {
+    max-width: 300px;
+    margin: 0 0 20px;
+    white-space: pre-line;
+}
+
+.donation_sub {
+    margin: 0 0 15px;
+    font-size: 15px;
+    color: #545454;
+}
+
+.donation-dog {
+    padding-left: 143px;
+}
+
+.donation-text {
+    padding: 0 142px 0 30px;
+}
+
+.donation-legal_info {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: italic;
+    color: #B2B2B2;
+    margin: 20px 0 0;
+}
+
+.donation-card {
+    display: flex;
+    padding: 10px 15px;
+    background: #F1CDB3;
+    border-radius: 9px;
+}
+
+.card_number {
+    padding-left: 15px;
+    font-size: 20px;
+    letter-spacing: 0.04rem;
+}
+
+/*---*/
+.footer {
+    background: radial-gradient(96.22% 577.55% at 97.96% 3.53%, #19191B 0%, #433429 100%);
+}
+
+.foot-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.foot-head {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 90px 35px 35px;
+    grid-template-columns: 300px 300px;
+    column-gap: 120px;
+    row-gap: 35px;
+}
+
+.foot_div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #F1CDB3;
+}
+
+.foot_div > span {
+    letter-spacing: 0.06em;
+    padding-left: 20px;
+}
+
+
+@media (hover: hover) {
+
+    .link a:not(:first-child):hover {
+        color: #9b64c4;
+    }
+
+    .item_cozy:hover {
+        cursor: pointer;
+    }
+
+    .slider_item:hover {
+        cursor: pointer;
+    }
+
+    .slider_item:hover > p {
+        color: #be2251;
+    }
+
+    .btn.make:hover, .btn.rest:hover {
+        background-color: #FDDCC4;
+        color: #8d25ab;
+    }
+
+    .arrow.right:hover {
+        background: #F1CDB3;
+        border: 2px solid #FFFFFF;
+    }
+
+    .learn_more:hover {
+        border: 2px solid #FAFAFA;
+        background-color: #F1CDB3;
+    }
+}
