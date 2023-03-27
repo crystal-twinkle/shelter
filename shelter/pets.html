@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pets</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pic/dogs-heart-shaped.png" >
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="wrapper header-wrap">
+            <nav class="navigation">
+                <div class="item_cozy"> <a href="index.html">
+                    <h3 class="cozy-head heading">Cozy House</h3>
+                    <p class="cozy_head_sub">Shelter for pets in Boston</p>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="index.html" class="active">About the shelter</a>
+                    <a href="pets.html">Our pets</a>
+                    <a href="index.html #help_shelter">Help the shelter</a>
+                    <a href="#cont">Contacts</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="pets" id="our_friends">
+
+    <div class="wrapper pets-wrap">
+
+        <div class="pets-content">
+            <h3 class="pets-head heading"> Our friends who
+                are looking for a house </h3>
+
+            <div class="slider">
+                <button class="arrow left btn"><img src="pic/Arrow1.svg" alt="left"></button>
+
+                <div class="slider_item" onclick="modalShow()">
+                    <img src="pic/pets-katrine.png" alt="Katrine">
+                    <p>Katrine</p>
+                    <button class="learn_more btn" onclick="modalShow()">Learn more</button>
+                </div>
+
+                <div class="slider_item" onclick="modalShow()">
+                    <img src="pic/pets-jennifer.png" alt="Jennifer">
+                    <p>Jennifer</p>
+                    <button class="learn_more btn" onclick="modalShow()">Learn more</button>
+                </div>
+
+                <div class="slider_item" onclick="modalShow()">
+                    <img src="pic/pets-woody.png" alt="Woody">
+                    <p>Woody</p>
+                    <button class="learn_more btn" onclick="modalShow()">Learn more</button>
+                </div>
+
+                <button class="arrow right btn"><img src="pic/Arrow2.svg" alt="right"></button>
+            </div>
+            <button class="rest btn"> <a href="pets.html">Get to know the rest</a></button>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrapper foot-wrap" id="cont">
+        <div class="grid">
+            <h3 class="foot-head heading"> For questions and suggestions </h3>
+            <h3 class="foot-head heading"> We are waiting for your visit </h3>
+            <div class="email foot_div"> <img src="pic/mail.svg" alt="mail">
+                <span> email@shelter.com</span>
+            </div>
+            <div class="pin1 foot_div"><img src="pic/pin.svg" alt="pin">
+                <span> 1 Central Street, Boston (entrance from the store) </span>
+            </div>
+            <div class="phone foot_div"><img src="pic/phone.svg" alt="phone">
+                <span> +13 674 567 75 54</span>
+            </div>
+            <div class="pin2 foot_div"><img src="pic/pin.svg" alt="pin">
+                <span> 18 South Park, London </span>
+            </div>
+        </div>
+        <img src="pic/footer-puppy.png" alt="footer-puppy">
+    </div>
+</footer>
+
+</body>
+</html>
