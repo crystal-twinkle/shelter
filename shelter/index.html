@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="pic/cute-dog.png" >
+    <link rel="icon" type="image/x-icon" href="pic/cute-dog.png">
 </head>
 
 <body>
-<header>
+<header class="header1">
     <div class="container">
         <div class="wrapper header-wrap">
             <nav class="navigation">
@@ -20,10 +19,10 @@
                     <p class="cozy_head_sub">Shelter for pets in Boston</p>
                 </div>
                 <div class="link">
-                    <a href="#" class="active">About the shelter</a>
-                    <a href="pets.html">Our pets</a>
-                    <a href="#help_shelter">Help the shelter</a>
-                    <a href="#cont">Contacts</a>
+                    <a href="javascript:void(0);" class="active">About the shelter</a>
+                    <a href="pets.html" class="head-hover">Our pets</a>
+                    <a href="#help_shelter" class="head-hover">Help the shelter</a>
+                    <a href="#cont" class="head-hover">Contacts</a>
                 </div>
             </nav>
             <div class="header_content">
@@ -37,9 +36,11 @@
                         wide and open heart. He or she will love you more than anybody else
                         in the world, you will see!
                     </p>
-                    <button class="btn make">
-                        <a href="#our_friends">Make a friend </a>
-                    </button>
+
+                    <form action="#our_friends" target="_blank">
+                        <button class="make btn"> Make a friend</button>
+                    </form>
+
                 </div>
                 <img src="pic/start-screen-puppy.png" alt="screen-puppy">
             </div>
@@ -85,7 +86,7 @@
                 are looking for a house </h3>
 
             <div class="slider">
-                <button class="arrow left btn"><img src="pic/Arrow1.svg" alt="left"></button>
+                <button class="knob activation"><img src="pic/Arrow1.svg" alt="left"></button>
 
                 <div class="slider_item" onclick="modalShow()">
                     <img src="pic/pets-katrine.png" alt="Katrine">
@@ -102,51 +103,53 @@
                 <div class="slider_item" onclick="modalShow()">
                     <img src="pic/pets-woody.png" alt="Woody">
                     <p>Woody</p>
-                    <button class="learn_more btn" onclick="modalShow()">Learn more</button>
+                    <button class="learn_more btn">Learn more</button>
                 </div>
 
-                <button class="arrow right btn"><img src="pic/Arrow2.svg" alt="right"></button>
+                <button class="knob activation"><img src="pic/Arrow2.svg" alt="right"></button>
             </div>
-            <button class="rest btn"> <a href="pets.html">Get to know the rest</a></button>
+            <form action="pets.html" target="_blank" class="form-but">
+                <button class="rest btn"> Get to know the rest</button>
+            </form>
         </div>
     </div>
 </section>
 
 <section class="help" id="help_shelter">
     <div class="wrapper help-wrap">
-        <div class="help-content" >
+        <div class="help-content">
             <h3 class="help-head heading">How you can help our shelter </h3>
             <div class="flex-container">
                 <div class="item1">
-                <div> <img src="pic/pet_food.svg" alt="Pet food">
-                    <p>Pet food</p>
-                </div>
-                <div> <img src="pic/transportation.svg" alt="Transportation">
-                    <p>Transportation</p>
-                </div>
-                <div><img src="pic/toys.svg" alt="Toys">
-                    <p>Toys</p>
-                </div>
-                <div><img src="pic/bowls-and-cups.svg" alt="Bowls and cups">
-                    <p>Bowls and cups</p>
-                </div>
-                <div><img src="pic/shampoos.svg" alt="Shampoos">
-                    <p>Shampoos</p>
-                </div>
+                    <div><img src="pic/pet_food.svg" alt="Pet food">
+                        <p>Pet food</p>
+                    </div>
+                    <div><img src="pic/transportation.svg" alt="Transportation">
+                        <p>Transportation</p>
+                    </div>
+                    <div><img src="pic/toys.svg" alt="Toys">
+                        <p>Toys</p>
+                    </div>
+                    <div><img src="pic/bowls-and-cups.svg" alt="Bowls and cups">
+                        <p>Bowls and cups</p>
+                    </div>
+                    <div><img src="pic/shampoos.svg" alt="Shampoos">
+                        <p>Shampoos</p>
+                    </div>
                 </div>
                 <div class="item2">
-                <div><img src="pic/vitamins.svg" alt="Vitamins">
-                    <p>Vitamins</p>
-                </div>
-                <div><img src="pic/medicines.svg" alt="Medicines">
-                    <p>Medicines</p>
-                </div>
-                <div class="it2"><img src="pic/collars-or-leashes.svg" alt="Collars / leashes">
-                    <p>Collars / leashes</p>
-                </div>
-                <div><img src="pic/sleeping-area.svg" alt="Sleeping areas">
-                    <p>Sleeping areas</p>
-                </div>
+                    <div><img src="pic/vitamins.svg" alt="Vitamins">
+                        <p>Vitamins</p>
+                    </div>
+                    <div><img src="pic/medicines.svg" alt="Medicines">
+                        <p>Medicines</p>
+                    </div>
+                    <div class="it2"><img src="pic/collars-or-leashes.svg" alt="Collars / leashes">
+                        <p>Collars / leashes</p>
+                    </div>
+                    <div><img src="pic/sleeping-area.svg" alt="Sleeping areas">
+                        <p>Sleeping areas</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -161,10 +164,11 @@
             <h3 class="donation-head heading"> You can also
                 make a donation </h3>
             <p class="donation_sub"> Name of the bank / Type of bank account</p>
-            <div class="donation-card"> <img src="pic/credit-card.svg" alt="card">
+            <div class="donation-card"><img src="pic/credit-card.svg" alt="card">
                 <span class="card_number">8380 2880 8028 8791 7435</span>
             </div>
-            <p class="donation-legal_info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class="donation-legal_info">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
+                elit.
                 Maecenas a ipsum at libero sagittis dignissim sed ac diam.
                 Praesent ultrices maximus tortor et vulputate.
                 Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -177,17 +181,25 @@
         <div class="grid">
             <h3 class="foot-head heading"> For questions and suggestions </h3>
             <h3 class="foot-head heading"> We are waiting for your visit </h3>
-            <div class="email foot_div"> <img src="pic/mail.svg" alt="mail">
-                <span> email@shelter.com</span>
+            <div class="email foot_div"><a href="mailto:email@shelter.com">
+                <img src="pic/mail.svg" alt="mail">
+                <span> email@shelter.com </span>
+            </a>
             </div>
-            <div class="pin1 foot_div"><img src="pic/pin.svg" alt="pin">
+            <div class="pin1 foot_div"><a href="https://goo.gl/maps/QfCPK6oj9zSWCKu17">
+                <img src="pic/pin.svg" alt="pin">
                 <span> 1 Central Street, Boston (entrance from the store) </span>
+            </a>
             </div>
-            <div class="phone foot_div"><img src="pic/phone.svg" alt="phone">
+            <div class="phone foot_div"><a href="tel:+136745677554">
+                <img src="pic/phone.svg" alt="phone">
                 <span> +13 674 567 75 54</span>
+            </a>
             </div>
-            <div class="pin2 foot_div"><img src="pic/pin.svg" alt="pin">
+            <div class="pin2 foot_div"><a href="https://goo.gl/maps/YdX27HfGEGhTxaxJ6">
+                <img src="pic/pin.svg" alt="pin">
                 <span> 18 South Park, London </span>
+            </a>
             </div>
         </div>
         <img src="pic/footer-puppy.png" alt="footer-puppy">

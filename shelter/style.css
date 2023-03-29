@@ -34,7 +34,6 @@ button {
 }
 
 .btn {
-    cursor: pointer;
     transition: .5s ease;
 }
 
@@ -50,10 +49,6 @@ button {
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #545454;
-}
-
-.rest a, .make a {
-    color: inherit;
 }
 
 .about-wrap, .donation-wrap {
@@ -74,47 +69,77 @@ button {
     background-color: #F6F6F6;
 }
 
-header {
+.header2 {
+    padding: 30px 0;
+    background-color: #FFFFFF;
+    background-size: cover;
+}
+
+.header1 {
     background-image: radial-gradient(96.22% 577.55% at 97.96% 3.53%, #19191B 0%, #433429 100%);
     background-size: cover;
 }
 
-header a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .item_cozy {
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
-.navigation {
+.header1 .navigation, .header2 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
 }
 
-.navigation a {
-    margin-right: 35px;
+.link {
+    display: flex;
+    gap: 35px;
 }
 
-.active:active {
-    border-bottom: 3px solid #F1CDB3;
+.header2 .navigation {
+    padding-top: 0;
 }
 
-.cozy-head {
+.header1 a, .header2 a {
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    color: #CDCDCD;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+
+.header1 .active {
+    color: #FAFAFA;
+    text-decoration: underline solid 3px #F1CDB3;
+    text-underline-offset: 0.4em;
+}
+
+.header2 .active {
+    color: #292929;
+    text-decoration: underline solid 3px #F1CDB3;
+    text-underline-offset: 0.4em;
+}
+
+.header1 .cozy-head, .header2 .cozy-head {
     color: #F1CDB3;
     font-size: 32px;
     margin-bottom: 10px;
 }
 
-.cozy_head_sub {
+.header2 .cozy-head {
+    color: #545454;;
+}
+
+.header1 .cozy_head_sub, .header2 .cozy_head_sub {
     font-family: Arial, sans-serif;
     color: #FFFFFF;
     font-size: 13px;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.09rem;
+}
+
+.header2 .cozy_head_sub {
+    color: #292929;
 }
 
 .header_sab {
@@ -139,6 +164,7 @@ header a {
     font-size: 44px;
     color: #FFFFFF;
     max-width: 310px;
+    line-height: 130%;
 }
 
 .make.btn {
@@ -153,7 +179,6 @@ header a {
 }
 
 /*HEADER END*/
-
 
 .about-text {
     padding-right: 175px
@@ -242,8 +267,11 @@ header a {
     border-radius: 100px;
 }
 
+.form-but {
+    text-align: center;
+}
 
-.arrow {
+.knob {
     background-color: #F6F6F6;
     width: 52px;
     height: 52px;
@@ -341,7 +369,7 @@ header a {
 .foot-wrap {
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 .foot-head {
@@ -356,7 +384,7 @@ header a {
     align-items: center;
     grid-template-rows: 90px 35px 35px;
     grid-template-columns: 300px 300px;
-    column-gap: 120px;
+    column-gap: 130px;
     row-gap: 35px;
 }
 
@@ -367,16 +395,51 @@ header a {
     color: #F1CDB3;
 }
 
-.foot_div > span {
+.foot_div span {
     letter-spacing: 0.06em;
     padding-left: 20px;
 }
 
+.foot_div a {
+    display: flex;
+    color: #F1CDB3;
+}
 
 @media (hover: hover) {
 
-    .link a:not(:first-child):hover {
-        color: #9b64c4;
+    .header1 .item_cozy:hover > .cozy-head {
+        color: #d50144;
+    }
+
+    .header1 .item_cozy:hover > .cozy_head_sub {
+        color: #d50144;
+    }
+
+    .header2 .item_cozy a:hover > .cozy-head {
+        color: #ce01d5;
+    }
+
+    .header2 .item_cozy a:hover > .cozy_head_sub {
+        color: #ce01d5;
+    }
+
+    .header1 .head-hover:hover {
+        cursor: pointer;
+        color: #FAFAFA;
+    }
+
+    .header2 .head-hover:hover {
+        cursor: pointer;
+        color: #292929;
+    }
+
+    .foot_div a:hover {
+        font-size: 18px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        cursor: pointer;
+        color: #a424d9;
     }
 
     .item_cozy:hover {
@@ -384,25 +447,62 @@ header a {
     }
 
     .slider_item:hover {
+        background-color: #f1f0ef;
         cursor: pointer;
+        box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
     }
 
-    .slider_item:hover > p {
-        color: #be2251;
+    .slider_item:hover > .learn_more {
+        border: 2px solid #FAFAFA;
+        background-color: #F1CDB3;
     }
 
     .btn.make:hover, .btn.rest:hover {
         background-color: #FDDCC4;
-        color: #8d25ab;
     }
 
-    .arrow.right:hover {
+    .donation-card:hover > .card_number {
+        cursor: pointer;
+        color: #9925ab;
+    }
+
+    .activation:hover {
         background: #F1CDB3;
         border: 2px solid #FFFFFF;
     }
 
-    .learn_more:hover {
-        border: 2px solid #FAFAFA;
-        background-color: #F1CDB3;
+    button:hover {
+        cursor: pointer;
     }
+}
+
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+}
+
+.friends_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2.44rem;
+    row-gap: 1.69rem;
+    margin-bottom: 3.56rem;
+}
+
+.friends-navigation {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+}
+
+.inactive {
+    border-color: #cdcdcd;
+    color: #cdcdcd;
+    cursor: default;
+}
+
+._number {
+    background-color: #f1cdb3;
 }
