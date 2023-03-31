@@ -15,11 +15,14 @@
     <header class="header1">
         <div class="header-wrap wrapper">
             <div class="header-logo">
-                <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
                 <div class="item_cozy">
                     <h3 class="cozy-head heading">Cozy House</h3>
                     <p class="cozy_head_sub">Shelter for pets in Boston</p>
                 </div>
+                <span class="hamburger"><span class="hamburger-line line1"></span>
+                <span class="hamburger-line line2"></span>
+                <span class="hamburger-line line3"></span>
+                </span>
             </div>
             <nav class="navigation">
                 <div class="link">
@@ -46,24 +49,31 @@
                         in the world, you will see!
                     </p>
 
-                    <form action="#our_friends" target="_blank">
+                    <form class="form-make" action="#our_friends" target="_blank">
                         <button class="make btn"> Make a friend</button>
                     </form>
                 </div>
 
-                <img src="pic/start-screen-puppy.png" alt="screen-puppy" class="screen-puppy">
+                <div class="screen-puppy">
+                <img src="pic/start-screen-puppy.png" alt="screen-puppy" >
             </div>
+
+        </div>
         </div>
     </section>
 </main>
 
 <section class="about">
+
     <div class="wrapper">
+
         <div class="about-container">
-            <img src="pic/about-pets.png" alt="about pets">
+
+            <img src="pic/about-pets.png" alt="about pets" class="about__pets">
+
             <div class="about-text">
-                <h2 class="about_head heading">
-                    About the shelter
+                <h2 class="about-head heading">
+                    About the shelter <br>
                     “Cozy House”
                 </h2>
                 <div class="about_subheading">
@@ -75,7 +85,7 @@
                     </p>
                     <p class="about_p">
                         We feed our wards with the best food and make sure that they
-                        do not get sick, feel comfortable (including psychologically) and
+                        do not get sick, feel &nbsp comfortable &nbsp (including &nbsp psychologically) and
                         well. We are supported by 87 volunteers and 28 employees of
                         various skill levels. About 12% of
                         the animals are taken by the shelter staff. Taking care of the
@@ -96,30 +106,30 @@
                 are looking for a house </h3>
 
             <div class="slider">
-            <button class="knob activation"><img src="pic/Arrow1.svg" alt="left"></button>
+                <button class="knob activation knob-left"><img src="pic/Arrow1.svg" alt="left"></button>
 
-            <div class="slider-pets">
+                <div class="slider-pets">
 
-                <div class="slider_item" onclick="modalShow()">
-                    <img src="pic/pets-katrine.png" alt="Katrine">
-                    <p>Katrine</p>
-                    <button class="learn_more btn" onclick="modalShow()">Learn more</button>
+                    <div class="slider_item" onclick="modalShow()">
+                        <img src="pic/pets-katrine.png" alt="Katrine">
+                        <p>Katrine</p>
+                        <button class="learn_more btn" onclick="modalShow()">Learn more</button>
+                    </div>
+
+                    <div class="slider_item slider_item2" onclick="modalShow()">
+                        <img src="pic/pets-jennifer.png" alt="Jennifer">
+                        <p>Jennifer</p>
+                        <button class="learn_more btn" onclick="modalShow()">Learn more</button>
+                    </div>
+
+                    <div class="slider_item slider_item3" onclick="modalShow()">
+                        <img src="pic/pets-woody.png" alt="Woody">
+                        <p>Woody</p>
+                        <button class="learn_more btn">Learn more</button>
+                    </div>
                 </div>
 
-                <div class="slider_item" onclick="modalShow()">
-                    <img src="pic/pets-jennifer.png" alt="Jennifer">
-                    <p>Jennifer</p>
-                    <button class="learn_more btn" onclick="modalShow()">Learn more</button>
-                </div>
-
-                <div class="slider_item slider_item3" onclick="modalShow()">
-                    <img src="pic/pets-woody.png" alt="Woody">
-                    <p>Woody</p>
-                    <button class="learn_more btn">Learn more</button>
-                </div>
-            </div>
-
-            <button class="knob activation"><img src="pic/Arrow2.svg" alt="right"></button>
+                <button class="knob activation"><img src="pic/Arrow2.svg" alt="right"></button>
             </div>
 
             <form action="pets.html" target="_blank" class="form-but">
@@ -132,7 +142,7 @@
 <section class="help" id="help_shelter">
     <div class="wrapper">
         <div class="help-content">
-            <h3 class="help-head heading">How you can help our shelter </h3>
+            <h3 class="help-head heading">How you can help <br> our shelter </h3>
             <div class="flex-container">
 
                 <div><img src="pic/pet_food.svg" alt="Pet food">
@@ -160,7 +170,7 @@
                 <div><img src="pic/collars-or-leashes.svg" alt="Collars / leashes">
                     <p>Collars / leashes</p>
                 </div>
-                <div><img src="pic/sleeping-area.svg" alt="Sleeping areas">
+                <div class="sleeping-area"><img src="pic/sleeping-area.svg" alt="Sleeping areas">
                     <p>Sleeping areas</p>
                 </div>
             </div>
@@ -221,7 +231,7 @@
                     </div>
                 </div>
             </div>
-            <img src="pic/footer-puppy.png" alt="footer-puppy">
+            <img src="pic/footer-puppy.png" alt="footer-puppy" class="footer-puppy">
         </div>
     </div>
 </footer>
