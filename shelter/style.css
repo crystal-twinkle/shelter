@@ -763,6 +763,10 @@ ul, ol, li {
         order: 0;
     }
 
+    .knob-right {
+        order: 2;
+    }
+
     .knob-left {
         order: 1;
     }
