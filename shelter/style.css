@@ -45,7 +45,7 @@ button {
     font-weight: 400;
     font-size: 2.188rem;
     line-height: 130%;
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
     color: #545454;
 }
 
@@ -123,7 +123,7 @@ main {
     font-family: Arial, sans-serif;
     color: #FFFFFF;
     font-size: 0.813rem;;
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
 }
 
 .header2 .cozy_head_sub {
@@ -156,13 +156,15 @@ main {
     line-height: 160%;
 }
 
-.screen-puppy {
-    padding-top: 60px;
+.screen-puppy img {
+    width: 569px;
+    height: 593px;
 }
 
 .screen-puppy {
-    width: 569px;
-    height: 593px;
+    padding-top: 60px;
+    max-width: 569px;
+
 }
 
 .make.btn {
@@ -181,28 +183,27 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 175px;
+    margin: 0 145px;
     column-gap: 120px;
     row-gap: 80px;
+    flex-wrap: wrap;
 }
 
 .about-head {
-    margin-bottom: 25px;
     max-width: 370px;
 }
 
+.about_subheading {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
 
 .about_subheading p {
     font-family: Arial, sans-serif;
     font-size: 0.94rem;
     color: #4C4C4C;
     line-height: 1.6;
-}
-
-.about_p {
-    -webkit-text-stroke: 0.05em #4C4C4C;
-    text-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 25px;
 }
 
 
@@ -310,13 +311,13 @@ main {
 .flex-container p {
     font-size: 1.25rem;
     color: #545454;
-    letter-spacing: 1px;
-    margin-top: 30px;
+    letter-spacing: 0.06rem;
+    margin-top: 27px;
 }
 
 .flex-container img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 
@@ -352,7 +353,7 @@ main {
 .donation-legal_info {
     font-family: Arial, sans-serif;
     font-size: 12px;
-    line-height: 16px;
+    line-height: 18px;
     font-style: italic;
     color: #B2B2B2;
     margin: 20px 0 0;
@@ -365,12 +366,13 @@ main {
     background: #F1CDB3;
     border-radius: 9px;
     width: 350px;
+    align-items: center;
 }
 
 .card_number {
     padding-left: 15px;
     font-size: 1.25rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
 }
 
 /*---*/
@@ -413,7 +415,7 @@ main {
 }
 
 .foot_div span {
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
     padding-left: 20px;
 }
 
@@ -423,22 +425,19 @@ main {
     color: #F1CDB3;
 }
 
+
+.header1 .head-no-hover, .header2 .head-no-hover {
+    cursor: default;
+}
+
 @media (hover: hover) {
 
-    .header1 .item_cozy:hover > .cozy-head {
-        color: #d50144;
+    .header1 .item_cozy:hover > .cozy-head, .header1 .item_cozy:hover > .cozy_head_sub {
+        color: #a65f39;
     }
 
-    .header1 .item_cozy:hover > .cozy_head_sub {
-        color: #d50144;
-    }
-
-    .header2 .item_cozy a:hover > .cozy-head {
-        color: #ce01d5;
-    }
-
-    .header2 .item_cozy a:hover > .cozy_head_sub {
-        color: #ce01d5;
+    .header2 .item_cozy a:hover > .cozy-head, .header2 .item_cozy a:hover > .cozy_head_sub {
+        color: #a65f39;
     }
 
     .header1 .head-hover:hover {
@@ -453,7 +452,7 @@ main {
 
     .foot_div a:hover {
         cursor: pointer;
-        color: #a424d9;
+        color: #e08f5d;
     }
 
     .item_cozy:hover {
@@ -475,9 +474,9 @@ main {
         background-color: #FDDCC4;
     }
 
-    .donation-card:hover > .card_number {
+    .donation-card:hover {
         cursor: pointer;
-        color: #9925ab;
+        background-color: #f1d5c2;
     }
 
     .activation:hover {
@@ -489,6 +488,7 @@ main {
         cursor: pointer;
     }
 }
+
 
 ul, ol, li {
     list-style: none;
@@ -510,7 +510,7 @@ ul, ol, li {
 .pets-head {
     align-self: center;
     white-space: pre-line;
-    margin-bottom: 45px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
@@ -538,9 +538,12 @@ ul, ol, li {
 }
 
 .about-text {
+    max-width: 430px;
     display: flex;
     flex-direction: column;
+    row-gap: 25px;
 }
+
 
 @media (max-width: 1200px) {
     .wrapper {
@@ -550,7 +553,7 @@ ul, ol, li {
 
 @media (max-width: 1130px) {
 
-    .start-content, .about-container {
+    .start-content {
         flex-wrap: wrap;
     }
 
@@ -586,9 +589,39 @@ ul, ol, li {
         margin: 0 auto;
     }
 
+    .about-text {
+        margin: auto;
+        max-width: none;
+    }
+
+    .donation-text {
+        margin: auto;
+        max-width: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .about-container {
+        flex-direction: column-reverse;
+    }
+
+    .donation-container {
+        flex-direction: column-reverse;
+        row-gap: 55px;
+    }
+
 }
 
 @media (max-width: 768px) {
+
+    body {
+        letter-spacing: normal;
+    }
+
+    .heading {
+        letter-spacing: 0.06rem;
+    }
 
     .start-content {
         row-gap: 40px;
@@ -598,16 +631,11 @@ ul, ol, li {
         max-width: 460px;
     }
 
-    .about-container {
-        flex-direction: column-reverse;
-    }
-
     .about-text {
         max-width: 430px;
     }
 
     .flex-container {
-        max-width: 630px;
         column-gap: 60px;
     }
 
@@ -615,11 +643,10 @@ ul, ol, li {
         width: 170px;
     }
 
-    .donation-container {
-        flex-direction: column-reverse;
-        row-gap: 60px;
+    .donation-text {
+        margin: auto;
+        max-width: 380px;
     }
-
 }
 
 .header-logo {
@@ -700,6 +727,7 @@ ul, ol, li {
     }
 
     .start-head {
+        letter-spacing: 0.06rem;
         font-size: 1.56rem;
     }
 
@@ -707,12 +735,16 @@ ul, ol, li {
         font-size: 1.56rem;
     }
 
+    .header-logo {
+        margin: 0 10px;
+    }
+
     .donation-card {
         width: 281px;
     }
 
     .card_number {
-        letter-spacing: normal;
+        letter-spacing: 0.06em;
         font-size: 15px;
     }
 
@@ -755,18 +787,23 @@ ul, ol, li {
         width: 130px;
     }
 
+    .flex-container img {
+        width: 50px;
+        height: 50px;
+    }
+
     .donation-dog {
         height: auto;
         width: 260px;
+    }
+
+    .pets-head {
+        margin-bottom: 42px;
     }
 }
 
 
 @media (max-width: 320px) {
-
-    .header-logo {
-        margin: 0 10px;
-    }
 
     .start-text, .about_head {
         text-align: center;
@@ -781,8 +818,27 @@ ul, ol, li {
     }
 
     .about_subheading {
-        padding: 0 10px;
+        padding: 0 15px;
         text-align: justify;
+        row-gap: 22px;
+    }
+
+
+    .about-head, .help-head {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .donation-head {
+        text-align: center;
+    }
+
+    .donation-container {
+        row-gap: 42px;
+    }
+
+    .donation-text {
+        padding: 0 10px;
     }
 
     .learn_more {
@@ -805,5 +861,25 @@ ul, ol, li {
     .sleeping-area {
         margin-right: auto;
     }
+
+    .foot-content {
+        padding-top: 0;
+    }
+
+    .foot_contact {
+        padding-top: 30px;
+    }
+
+    .foot_contact_item:first-child {
+        text-align: center;
+        align-items: center;
+    }
+
+    .foot-head_child2 {
+        text-align: center;
+        max-width: 270px;
+        margin: auto;
+    }
+
 }
 
