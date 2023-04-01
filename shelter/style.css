@@ -30,12 +30,6 @@ button {
     margin: auto;
 }
 
-/*
-.header-wrap {
-    max-width: 1200;
-    margin: auto;
-}
-*/
 
 .btn {
     transition: .5s ease;
@@ -137,7 +131,7 @@ main {
 
 .start-content {
     display: flex;
-    column-gap: 95px;
+    column-gap: 40px;
     justify-content: center;
     margin: auto;
 }
@@ -146,6 +140,7 @@ main {
     font-size: 2.75rem;
     color: #FFFFFF;
     line-height: 130%;
+    letter-spacing: normal;
 }
 
 .start_sab {
@@ -154,17 +149,12 @@ main {
     font-family: 'Arial', serif;
     font-size: 0.94rem;
     line-height: 160%;
+    letter-spacing: normal;
 }
 
-.screen-puppy img {
-    width: 569px;
-    height: 593px;
-}
 
 .screen-puppy {
-    padding-top: 60px;
-    max-width: 569px;
-
+    padding-top: 90px;
 }
 
 .make.btn {
@@ -311,12 +301,6 @@ main {
     letter-spacing: 0.06rem;
     margin-top: 27px;
 }
-
-.flex-container img {
-    width: 60px;
-    height: 60px;
-}
-
 
 /*HELP END*/
 .donation-container {
@@ -550,11 +534,20 @@ ul, ol, li {
 
 @media (max-width: 1130px) {
 
+    picture img {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
     .start-content {
         flex-wrap: wrap;
     }
 
     .screen-puppy {
+        padding-top: 100px;
         margin-left: auto;
     }
 
@@ -607,7 +600,6 @@ ul, ol, li {
         flex-direction: column-reverse;
         row-gap: 55px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -618,10 +610,6 @@ ul, ol, li {
 
     .heading {
         letter-spacing: 0.06rem;
-    }
-
-    .start-content {
-        row-gap: 40px;
     }
 
     .start-text {
@@ -657,13 +645,17 @@ ul, ol, li {
     height: 22px;
 }
 
-.hamburger-line {
+.header1 .hamburger-line, .header2 .hamburger-line {
     content: "";
     display: inline-block;
     position: absolute;
     background-color: #F1CDB3;
     width: 100%;
     height: 3px;
+}
+
+.header2 .hamburger-line {
+    background-color: #000000;
 }
 
 .line2 {
@@ -745,16 +737,6 @@ ul, ol, li {
         font-size: 15px;
     }
 
-    .screen-puppy img {
-        height: 272px;
-        width: 260px;
-    }
-
-    .about__pets {
-        width: 260px;
-        height: 354px;
-    }
-
     .slider {
         flex-direction: column;
     }
@@ -775,11 +757,6 @@ ul, ol, li {
         font-size: 25px;
     }
 
-    .footer-puppy {
-        width: 260px;
-        height: 269px;
-    }
-
     .flex-container {
         column-gap: 30px;
     }
@@ -788,22 +765,18 @@ ul, ol, li {
         width: 130px;
     }
 
-    .flex-container img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .donation-dog {
-        height: auto;
-        width: 260px;
-    }
-
     .pets-head {
         margin-bottom: 42px;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
+
+    .flex-container img {
+        width: 50px;
+        height: 50px;
+    }
+
     .friends-navigation {
         column-gap: 10px;
     }
