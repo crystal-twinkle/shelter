@@ -483,7 +483,7 @@ ul, ol, li {
     flex-wrap: wrap;
     column-gap: 40px;
     row-gap: 27px;
-    margin: 0 0 45px;
+    margin: 0 0 60px;
 }
 
 .pets-head {
@@ -636,6 +636,17 @@ ul, ol, li {
         max-width: 380px;
     }
 
+    .pets {
+        padding: 80px 0 76px;
+    }
+
+    .pets-head {
+        margin-bottom: 30px;
+    }
+
+    .friends_list {
+        margin-bottom: 40px;
+    }
 }
 
 .header-logo {
@@ -708,13 +719,6 @@ ul, ol, li {
         row-gap: 40px;
     }
 
-    .pets {
-        padding: 80px 0 76px;
-    }
-
-    .pets-head {
-        margin-bottom: 30px;
-    }
 }
 
 @media (max-width: 575px) {
@@ -781,6 +785,15 @@ ul, ol, li {
     .friends-navigation {
         column-gap: 10px;
     }
+
+    .pets {
+        padding: 42px 0;
+    }
+
+    .pets-head {
+        margin-bottom: 42px;
+    }
+
 }
 
 @media (max-width: 395px) {
