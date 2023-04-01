@@ -80,7 +80,7 @@ main {
 
 .link {
     display: flex;
-    gap: 35px;
+    gap: 2.19rem;
 }
 
 
@@ -131,7 +131,7 @@ main {
 
 .start-content {
     display: flex;
-    column-gap: 40px;
+    column-gap: 2.5rem;
     justify-content: center;
     margin: auto;
 }
@@ -174,8 +174,8 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 145px;
-    column-gap: 120px;
-    row-gap: 80px;
+    column-gap: 7.5rem;
+    row-gap: 5rem;
     flex-wrap: wrap;
 }
 
@@ -186,7 +186,7 @@ main {
 .about_subheading {
     display: flex;
     flex-direction: column;
-    row-gap: 25px;
+    row-gap: 1.56rem;
 }
 
 .about_subheading p {
@@ -216,7 +216,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 90px;
+    column-gap: 5.6rem;
 }
 
 .slider_item {
@@ -265,7 +265,7 @@ main {
     width: 52px;
     height: 52px;;
     border: 2px solid #F1CDB3;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 
 
@@ -278,7 +278,7 @@ main {
 }
 
 .help-head {
-    max-width: 310px;
+    max-width: 19.38rem;
     margin: 0 auto 60px;
 }
 
@@ -286,11 +286,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    column-gap: 120px;
-    row-gap: 55px;
+    column-gap: 7.5rem;
+    row-gap: 3.44rem;
     justify-content: center;
     align-content: center;
-    max-width: 1026px;
+    max-width: 64.13rem;
     margin: auto;
 }
 
@@ -308,14 +308,14 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 915px;
-    column-gap: 30px;
+    max-width: 57.19rem;
+    column-gap: 1.88rem;
     margin: auto;
 }
 
 
 .donation-head {
-    max-width: 300px;
+    max-width: 18.75rem;
     margin: 0 0 20px;
     white-space: pre-line;
 }
@@ -328,7 +328,7 @@ main {
 
 .donation-text {
     margin: auto;
-    max-width: 380px;
+    max-width: 23.75rem;
 }
 
 .donation-legal_info {
@@ -346,7 +346,7 @@ main {
     padding: 10px 15px;
     background: #F1CDB3;
     border-radius: 9px;
-    width: 350px;
+    width: 21.88rem;
     align-items: center;
 }
 
@@ -377,15 +377,15 @@ main {
 .foot_contact {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 130px;
+    column-gap: 8.13rem;
     padding-top: 16px;
 }
 
 .foot_contact_item {
     display: flex;
     flex-direction: column;
-    row-gap: 35px;
-    max-width: 300px;
+    row-gap: 2.19rem;
+    max-width: 18.75rem;
 }
 
 .foot_div {
@@ -462,7 +462,6 @@ main {
 
     .activation:hover {
         background: #F1CDB3;
-        border: 2px solid #FFFFFF;
     }
 
     button:hover {
@@ -484,8 +483,6 @@ ul, ol, li {
     column-gap: 40px;
     row-gap: 27px;
     margin: 0 0 45px;
-    overflow: hidden;
-    height: 1365px;
 }
 
 .pets-head {
@@ -507,7 +504,7 @@ ul, ol, li {
     cursor: default;
 }
 
-._number {
+.number__one {
     background-color: #f1cdb3;
 }
 
@@ -533,10 +530,6 @@ ul, ol, li {
 }
 
 @media (max-width: 1130px) {
-
-    picture img {
-        width: 100%;
-    }
 
     img {
         max-width: 100%;
@@ -592,6 +585,11 @@ ul, ol, li {
 
 @media (max-width: 900px) {
 
+    .friends_list {
+        overflow: hidden;
+        height: 1365px;
+    }
+
     .about-container {
         flex-direction: column-reverse;
     }
@@ -600,9 +598,13 @@ ul, ol, li {
         flex-direction: column-reverse;
         row-gap: 55px;
     }
+
+    .footer__puppy {
+        margin: auto;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
 
     body {
         letter-spacing: normal;
@@ -632,6 +634,7 @@ ul, ol, li {
         margin: auto;
         max-width: 380px;
     }
+
 }
 
 .header-logo {
@@ -737,20 +740,8 @@ ul, ol, li {
         font-size: 15px;
     }
 
-    .slider {
-        flex-direction: column;
-    }
-
-    .slider-pets {
-        order: 0;
-    }
-
-    .knob-right {
-        order: 2;
-    }
-
-    .knob-left {
-        order: 1;
+    .pets-content {
+        position: relative;
     }
 
     .foot-head {
@@ -770,6 +761,7 @@ ul, ol, li {
     }
 }
 
+
 @media (max-width: 450px) {
 
     .flex-container img {
@@ -779,6 +771,26 @@ ul, ol, li {
 
     .friends-navigation {
         column-gap: 10px;
+    }
+}
+
+@media (max-width: 395px) {
+
+    .slider {
+        justify-content: center;
+        margin-bottom: 54px;;
+    }
+
+    .arrow-left {
+        position: absolute;
+        left: 58px;
+        bottom: 94px;
+    }
+
+    .arrow-right {
+        position: absolute;
+        right: 58px;
+        bottom: 94px;
     }
 }
 
