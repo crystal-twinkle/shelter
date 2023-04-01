@@ -699,6 +699,11 @@ ul, ol, li {
         display: none;
     }
 
+}
+
+
+@media (max-width: 750px) {
+
     .donation-dog {
         height: auto;
         width: 505px;
