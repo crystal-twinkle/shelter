@@ -681,7 +681,7 @@ ul, ol, li {
     top: 20px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 767px) {
 
     .hamburger {
         position: absolute;
