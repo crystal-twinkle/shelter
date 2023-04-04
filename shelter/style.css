@@ -91,6 +91,7 @@ main {
     color: #CDCDCD;
     font-size: 0.94rem;
     line-height: 160%;
+    letter-spacing:normal;
 }
 
 
@@ -306,7 +307,6 @@ main {
 /*HELP END*/
 .donation-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 57.19rem;
@@ -409,6 +409,7 @@ main {
 
 
 .header1 .head-no-hover, .header2 .head-no-hover {
+    letter-spacing: normal;
     cursor: default;
 }
 
@@ -532,6 +533,10 @@ ul, ol, li {
 
 @media (max-width: 1130px) {
 
+    .donation-container {
+        flex-wrap: wrap;
+    }
+
     img {
         max-width: 100%;
     }
@@ -623,6 +628,11 @@ ul, ol, li {
         max-width: 430px;
     }
 
+    .foot_contact {
+        column-gap: 60px;
+        margin:auto;
+    }
+
     .flex-container {
         column-gap: 60px;
     }
@@ -638,10 +648,6 @@ ul, ol, li {
 
     .pets {
         padding: 80px 0 76px;
-    }
-
-    .pets-head {
-        margin-bottom: 30px;
     }
 
     .friends_list {
@@ -882,6 +888,10 @@ ul, ol, li {
 
     .foot_contact {
         padding-top: 30px;
+    }
+
+    .foot_contact_item {
+        row-gap: 40px;
     }
 
     .foot_contact_item:first-child {
