@@ -373,19 +373,20 @@ main {
 .foot-head {
     margin: 0;
     color: #FFFFFF;
+    letter-spacing: 0.09rem;
 }
 
 .foot_contact {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 8.13rem;
+    column-gap: 172px;
     padding-top: 16px;
 }
 
 .foot_contact_item {
     display: flex;
     flex-direction: column;
-    row-gap: 2.19rem;
+    row-gap: 2.4rem;
     max-width: 18.75rem;
 }
 
