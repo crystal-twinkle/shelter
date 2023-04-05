@@ -326,6 +326,7 @@ main {
     margin: 0 0 15px;
     font-size: 15px;
     color: #545454;
+    letter-spacing: 0.06rem;
 }
 
 .donation-text {
