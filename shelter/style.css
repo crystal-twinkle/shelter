@@ -196,6 +196,7 @@ main {
     font-size: 0.94rem;
     color: #4C4C4C;
     line-height: 1.6;
+    letter-spacing: normal;
 }
 
 
@@ -386,9 +387,19 @@ main {
 .foot_contact_item {
     display: flex;
     flex-direction: column;
-    row-gap: 2.4rem;
+    row-gap: 35px;
     max-width: 18.75rem;
 }
+
+.foot_contact_item .email {
+    margin-top: 7px;
+}
+
+.foot_contact_item .phone {
+ margin-top: 10px;
+}
+
+
 
 .foot_div {
     display: flex;
@@ -630,7 +641,7 @@ ul, ol, li {
     }
 
     .foot_contact {
-        column-gap: 60px;
+        column-gap: 75px;
         margin:auto;
     }
 
@@ -653,6 +664,14 @@ ul, ol, li {
 
     .friends_list {
         margin-bottom: 40px;
+    }
+
+    .pets-head {
+        margin-bottom: 30px;
+    }
+
+    .foot-content {
+        padding-top: 7px;
     }
 }
 
