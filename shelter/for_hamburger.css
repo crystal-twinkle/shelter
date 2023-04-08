@@ -1,0 +1,33 @@
+
+/*hamburger menu*/
+.scroll-no {
+    overflow: hidden;
+}
+
+.hamburger_move {
+    z-index: 3;
+    transform: rotate(90deg);
+}
+
+.navigation_show {
+    width: 320px;
+    z-index: 1;
+}
+
+.blackout {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.6);
+}
+
+.blackout-yes {
+    z-index: 1;
+    display: block;
+}
+
+.hamburger, .navigation {
+    transition: all 0.5s ease-out;
+}
+
