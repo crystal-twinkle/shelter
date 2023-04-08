@@ -382,10 +382,12 @@ main {
 .inactive {
     border: 2px solid #cdcdcd;
     color: #cdcdcd;
+    background-color: #FFFFFF;
     cursor: default;
 }
 
 .activation, .arrow-activation {
+    background-color: #FFFFFF;
     border: 2px solid #F1CDB3;
 }
 
