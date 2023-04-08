@@ -1,0 +1,159 @@
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 74%;
+    z-index: 2;
+}
+
+.modal-wrap {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    height: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.modal-tob {
+    letter-spacing: 0.06em;
+}
+
+
+.cross-modal {
+    position: absolute;
+    top: -55px;
+    right: -45px;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.cross-modal span {
+    font-size: 18px;
+}
+
+.modal-text-container {
+    margin: auto auto auto 22px;
+    max-width: 351px;
+    padding-right: 5px;
+}
+
+.modal-head {
+    font-size: 35px;
+    letter-spacing: 0.06rem;
+}
+
+.modal-sub {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+}
+
+.modal-des {
+    font-size: 15px;
+    margin-bottom: 40px;
+    letter-spacing: 0.06rem;
+}
+
+.modal-dog-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.modal-dog-info div {
+    font-size: 15px;
+    letter-spacing: 0.06rem;
+}
+
+
+.modal .modal-dog-info div::before {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    background-color: #F1CDB3;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+@media (max-width: 1130px) {
+    .modal {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 885px) {
+    .modal {
+        width: 90%;
+        height: 65%;
+    }
+
+}
+
+@media (max-width: 770px) {
+    .modal {
+        width: 84%;
+        height: 60%;
+    }
+
+    .modal-sub {
+        margin-bottom: 20px;
+    }
+
+    .modal-des {
+        margin-bottom: 20px;
+    }
+
+    .modal-dog-info {
+        row-gap: 5px;
+    }
+
+    .modal-text-container {
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .modal-wrap img {
+        display: none;
+    }
+
+}
+
+@media (max-width: 330px) {
+    .modal {
+        width: 75%;
+    }
+
+    .modal-head, .modal-sub {
+        text-align: center;
+    }
+
+    .modal-des {
+        font-size: 13px;
+    }
+    .cross-modal {
+        top: -50px;
+        right: -25px;
+    }
+
+
+}
