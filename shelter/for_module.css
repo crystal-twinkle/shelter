@@ -36,10 +36,10 @@
     right: -45px;
     width: 52px;
     height: 52px;
-    background-color: transparent;
-    border: 2px solid #F1CDB3;
+    border: 3px solid #F1CDB3;
     border-radius: 100px;
     cursor: pointer;
+    background: #FFFFFF;
 }
 
 .cross-modal span {
@@ -90,6 +90,12 @@
     background-color: #F1CDB3;
     margin-right: 10px;
     border-radius: 50%;
+}
+
+@media (hover: hover) {
+    .cross-modal:hover {
+        background-color: #FDDCC4;
+    }
 }
 
 @media (max-width: 1130px) {

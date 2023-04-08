@@ -29,8 +29,6 @@ function fillDivPetsArray() {
     let basicPets = pets.slice();
     shuffle(basicPets, 0, pets.length);
 
-    let startPos = 0, endPos = startPos + 5;
-
     for (let i = 0; i < 6; i++) {
         let shuffledArr = basicPets.slice();
 
@@ -198,31 +196,31 @@ function moveLast() {
 }
 
 function inactivateLeftButtons() {
-    butFirst.classList.remove('active');
+    butFirst.classList.remove('activation');
     butFirst.classList.add('inactive');
-    butLeft.classList.remove('active')
+    butLeft.classList.remove('activation')
     butLeft.classList.add('inactive');
 }
 
 function inactivateRightButtons() {
-    butRight.classList.remove('active');
+    butRight.classList.remove('activation');
     butRight.classList.add('inactive');
-    butLast.classList.remove('active')
+    butLast.classList.remove('activation')
     butLast.classList.add('inactive');
 }
 
 function activateLeftButtons() {
     butFirst.classList.remove('inactive');
-    butFirst.classList.add('active');
+    butFirst.classList.add('activation');
     butLeft.classList.remove('inactive');
-    butLeft.classList.add('active');
+    butLeft.classList.add('activation');
 }
 
 function activateRightButtons() {
     butRight.classList.remove('inactive');
-    butRight.classList.add('active');
+    butRight.classList.add('activation');
     butLast.classList.remove('inactive');
-    butLast.classList.add('active');
+    butLast.classList.add('activation');
 }
 
 

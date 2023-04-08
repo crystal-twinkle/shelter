@@ -346,8 +346,54 @@ main {
     color: #F1CDB3;
 }
 
+.footer__puppy {
+    margin: auto;
+}
+
+/*---*/
+
+.friends_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 27px;
+    margin: 0 0 60px;
+}
+
+.pets-head {
+    white-space: pre-line;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.friends-navigation {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.number__one {
+    background-color: #f1cdb3;
+    border: 2px solid #F1CDB3;
+}
+
+.inactive {
+    border: 2px solid #cdcdcd;
+    color: #cdcdcd;
+    cursor: default;
+}
+
+.activation, .arrow-activation {
+    border: 2px solid #F1CDB3;
+}
 
 @media (hover: hover) {
+
+    .btn:hover {
+        cursor: pointer;
+    }
 
     .header1 .item_cozy:hover > .cozy-head, .header1 .item_cozy:hover > .cozy_head_sub {
         color: #a65f39;
@@ -391,6 +437,11 @@ main {
         background-color: #FDDCC4;
     }
 
+    .activation:hover, .arrow-activation:hover {
+        cursor: pointer;
+        background-color:#FDDCC4 ;
+    }
+
     .donation-card:hover {
         cursor: pointer;
         background-color: #f1d5c2;
@@ -400,44 +451,7 @@ main {
         background: #F1CDB3;
     }
 
-    button:hover {
-        cursor: pointer;
-    }
 }
-
-.friends_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 27px;
-    margin: 0 0 60px;
-}
-
-.pets-head {
-
-    white-space: pre-line;
-    margin: 0 auto 60px;
-    text-align: center;
-}
-
-.friends-navigation {
-    display: flex;
-    justify-content: center;
-    column-gap: 20px;
-}
-
-.inactive {
-    border-color: #cdcdcd;
-    color: #cdcdcd;
-    cursor: default;
-}
-
-.number__one {
-    background-color: #f1cdb3;
-}
-
 
 .start-text {
     display: flex;
@@ -454,12 +468,11 @@ main {
 
 /*Rets content*/
 .knob {
-    background-color: #F6F6F6;
     width: 52px;
-    height: 52px;;
-    border: 2px solid #F1CDB3;
+    height: 52px;
     border-radius: 100%;
 }
+
 
 .slider_card {
     background: #FFFFFF;
@@ -468,6 +481,7 @@ main {
     flex-direction: column;
     align-items: center;
     row-gap: 30px;
+    height: 435px;
 }
 
 .slider_p {
@@ -562,9 +576,6 @@ main {
         row-gap: 55px;
     }
 
-    .footer__puppy {
-        margin: auto;
-    }
 }
 
 @media (max-width: 770px) {
