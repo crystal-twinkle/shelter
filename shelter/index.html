@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="for_slider.css">
+    <link rel="stylesheet" href="for_hamburger.css">
+    <link rel="stylesheet" href="for_module.css">
     <link rel="icon" type="image/x-icon" href="pic/cute-dog.png">
 </head>
 
 <body>
-
+<div class="blackout"> </div>
 <main>
     <header class="header1">
         <div class="header-wrap wrapper">
@@ -26,10 +29,10 @@
             </div>
             <nav class="navigation">
                 <div class="link">
-                    <a href="javascript:void(0);" class="active head___a head-no-hover">About the shelter</a>
-                    <a href="pets.html" class="head-hover head___a">Our pets</a>
-                    <a href="#help_shelter" class="head-hover head___a">Help the shelter</a>
-                    <a href="#cont" class="head-hover head___a">Contacts</a>
+                    <a href="javascript:void(0);" class="link-no-hover">About the shelter</a>
+                    <a href="pets.html" class="link-hover">Our pets</a>
+                    <a href="#help_shelter" class="link-hover">Help the shelter</a>
+                    <a href="#cont" class="link-hover">Contacts</a>
                 </div>
             </nav>
         </div>
@@ -73,7 +76,7 @@
 
             <picture class="about__pets">
                 <source srcset="pic/about-pets.png" media="(min-width: 575px)">
-                <img src="pic/about-pets-small.png" alt="about pets">
+                <img src="pic/about-pets-small.png" alt="about-pets">
             </picture>
 
             <div class="about-text">
@@ -111,30 +114,25 @@
                 are looking for a house </h3>
 
             <div class="slider">
-                <button class="knob activation arrow-left"><img src="pic/Arrow1.svg" alt="left"></button>
+                <button class="knob arrow-left" id="arrow-left">
+                    <img src="pic/Arrow1.svg" alt="left">
+                </button>
 
-                <div class="slider-pets">
+                <div class="slider-wrap" id="slider-wrap">
 
-                    <div class="slider_item" onclick="modalShow()">
-                        <img src="pic/pets-katrine.png" alt="Katrine">
-                        <p>Katrine</p>
-                        <button class="learn_more btn" onclick="modalShow()">Learn more</button>
-                    </div>
-
-                    <div class="slider_item slider_item2" onclick="modalShow()">
-                        <img src="pic/pets-jennifer.png" alt="Jennifer">
-                        <p>Jennifer</p>
-                        <button class="learn_more btn" onclick="modalShow()">Learn more</button>
-                    </div>
-
-                    <div class="slider_item slider_item3" onclick="modalShow()">
-                        <img src="pic/pets-woody.png" alt="Woody">
-                        <p>Woody</p>
-                        <button class="learn_more btn">Learn more</button>
+                    <div class="slider-pets" id="slider-pets">
+                        <div class="slider_item" id="it-left">
+                        </div>
+                        <div class="slider_item" id="it-active">
+                        </div>
+                        <div class="slider_item" id="it-right">
+                        </div>
                     </div>
                 </div>
 
-                <button class="knob activation arrow-right"><img src="pic/Arrow2.svg" alt="right"></button>
+                <button class="knob arrow-right " id="arrow-right">
+                    <img src="pic/Arrow2.svg" alt="right">
+                </button>
             </div>
 
             <form action="pets.html" class="form-but">
@@ -246,7 +244,32 @@
         </div>
     </div>
 </footer>
-<script src="slider.js"></script>
+
+<div class="modal hidden">
+    <div class="modal-wrap">
+        <img src="" alt="some-picture">
+        <div class="modal-text-container">
+            <div class="modal-top">
+                <h2 class="modal-head "></h2>
+                <p class="modal-sub"></p>
+            </div>
+            <p class="modal-des">
+            </p>
+            <div class="modal-dog-info">
+                <div><b>Age:</b> <span class = "modal-dog-age"> </span> </div>
+                <div><b>Inoculations:</b> <span class = "modal-dog-inoculations"> </span> </div>
+                <div><b>Diseases:</b><span class = "modal-dog-diseases"> </span></div>
+                <div><b>Parasites:</b> <span class = "modal-dog-parasites"> </span> </div>
+            </div>
+        </div>
+        <button class="cross-modal">
+            <span>✖</span>
+        </button>
+    </div>
+</div>
+
+
+<script type="module" src="slider.js"></script>
 <script src="hamburger.js"></script>
 </body>
 </html>

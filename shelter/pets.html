@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pets</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="for_hamburger.css">
+    <link rel="stylesheet" href="for_module.css">
     <link rel="icon" type="image/x-icon" href="pic/dogs-heart-shaped.png">
 </head>
 
 <body>
-
+<div class="blackout"> </div>
 <header class="header2">
     <div class="wrapper header-wrap">
         <div class="header-logo">
@@ -27,10 +29,10 @@
 
         <nav class="navigation">
             <div class="link">
-                <a href="index.html" class="head-hover head___a"> About the shelter </a>
-                <a href="javascript:void(0);" class="head-no-hover active"> Our pets </a>
-                <a href="index.html#help_shelter" class="head-hover head___a">Help the shelter</a>
-                <a href="#cont" class="head-hover head___a">Contacts</a>
+                <a href="index.html" class="link-hover"> About the shelter </a>
+                <a href="javascript:void(0);" class="link-no-hover"> Our pets </a>
+                <a href="index.html#help_shelter" class="link-hover">Help the shelter</a>
+                <a href="#cont" class="link-hover">Contacts</a>
             </div>
         </nav>
     </div>
@@ -42,54 +44,16 @@
             <div class="pets-content">
                 <h1 class="pets-head heading"> Our friends who
                     are looking for a house </h1>
-                <ul class="friends_list">
-                    <li class="slider_item">
-                        <img src="pic/pets-katrine.png" alt="Cat Katrine">
-                        <p>Katrine</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                    <li class="slider_item">
-                        <img src="pic/pets-jennifer.png" alt="Dog Jennifer">
-                        <p>Jennifer</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                    <li class="slider_item">
-                        <img src="pic/pets-woody.png" alt="Dog Woody">
-                        <p>Woody</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                    <li class="slider_item">
-                        <img src="pic/pets-sophia.png" alt="Dog Sophia">
-                        <p>Sophia</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                    <li class="slider_item">
-                        <img src="pic/pets-timmy.png" alt="Cat Timmy">
-                        <p>Timmy</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                    <li class="slider_item">
-                        <img src="pic/pets-charly.png" alt="Dog Charly">
-                        <p>Charly</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                    <li class="slider_item">
-                        <img src="pic/pets-scarlet.png" alt="Dog Scarlett">
-                        <p>Scarlett</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                    <li class="slider_item">
-                        <img src="pic/pets-freddie.png" alt="Cat Freddie">
-                        <p>Freddie</p>
-                        <button class="learn_more btn">Learn more</button>
-                    </li>
-                </ul>
+                <div class="friends_list">
+
+                </div>
+
                 <div class="friends-navigation">
-                    <button class="knob inactive"><span>&lt; &lt;</span></button>
-                    <button class="knob inactive"><span>&lt;</span></button>
-                    <button class="knob number__one"><span>1</span></button>
-                    <button class="knob activation"><span>&gt;</span></button>
-                    <button class="knob activation"><span>&gt;&gt;</span></button>
+                    <button class="knob inactive" id="but-first"><span>&lt; &lt;</span></button>
+                    <button class="knob inactive" id="but-left"><span>&lt;</span></button>
+                    <button class="knob number__one" id="current-page">1</button>
+                    <button class="knob activation" id="but-right"><span>&gt;</span></button>
+                    <button class="knob activation" id="but-last"><span>&gt;&gt;</span></button>
                 </div>
             </div>
         </div>
@@ -128,14 +92,39 @@
                 </div>
             </div>
             <picture class="footer__puppy">
-                <source srcset="pic/footer-puppy.png" media="(min-width: 575px)">
-                <img src="pic/footer-puppy-small.png" alt="footer-puppy">
+                <source srcset="pic/footer-puppy.png" media="(min-width: 575px)"/>
+                <img src="pic/footer-puppy-small.png" alt="footer-puppy"/>
             </picture>
         </div>
     </div>
 </footer>
 
+<div class="modal hidden">
+    <div class="modal-wrap">
+        <img src="" alt="some-picture">
+        <div class="modal-text-container">
+            <div class="modal-top">
+                <h2 class="modal-head "></h2>
+                <p class="modal-sub"></p>
+            </div>
+            <p class="modal-des">
+            </p>
+            <div class="modal-dog-info">
+                <div><b>Age:</b> <span class = "modal-dog-age"> </span> </div>
+                <div><b>Inoculations:</b> <span class = "modal-dog-inoculations"> </span> </div>
+                <div><b>Diseases:</b><span class = "modal-dog-diseases"> </span></div>
+                <div><b>Parasites:</b> <span class = "modal-dog-parasites"> </span> </div>
+            </div>
+        </div>
+        <button class="cross-modal">
+            <span>✖</span>
+        </button>
+    </div>
+</div>
 
-<script> </script>
+
+<script type="module" src="module.js"></script>
+<script type="module" src="hamburger.js"></script>
+<script type="module" src="pagination.js"></script>
 </body>
 </html>
