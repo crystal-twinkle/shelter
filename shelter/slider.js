@@ -24,7 +24,7 @@ window.addEventListener('resize', go);
 
 function go() {
     clear();
-    if (window.innerWidth >= 1130) {
+    if (window.innerWidth >= 1200) {
         cardsCount = 3;
     } else if (window.innerWidth >= 750) {
         cardsCount = 2;

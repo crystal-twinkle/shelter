@@ -25,7 +25,6 @@
     width: 990px;
 }
 
-
 .rest {
     align-self: center;
     font-size: 1.06rem;
@@ -53,7 +52,7 @@
     transition-duration: 1s;
 }
 
-@media (max-width: 1130px) {
+@media (max-width: 1200px) {
     .slider {
         column-gap: 12px;
     }
