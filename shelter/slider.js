@@ -64,7 +64,6 @@ function generateCardActive() {
         activeContent.push(divGenerated);
     }
     forModule();
-
 }
 
 function generateCardLeft() {
@@ -82,6 +81,7 @@ function generateCardLeft() {
     }
     forModule();
 }
+
 function generateCardRight() {
     rightRandom = [];
     for (let i = 0; i < cardsCount; i++) {
@@ -117,7 +117,6 @@ function generateCard(rand) {
 
 function forModule() {
     sliderCard = document.querySelectorAll(".slider_card");
-    console.log(sliderCard);
     sliderCard.forEach(element =>
         element.addEventListener('click', event => showModal(event))
     );
@@ -171,7 +170,6 @@ function moveRight() {
         arrowRight.addEventListener("click", moveRight);
         forModule();
     }, 1000)
-
 
 }
 

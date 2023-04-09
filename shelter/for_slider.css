@@ -96,13 +96,12 @@
 
     .slider-pets {
         left: -280px;
-        width: 850px;
+        width: 900px;
         gap: 20px;
     }
 
     .slider_item {
         width: 270px;
-        gap: 20px;
     }
 
     .trans-left {
@@ -117,6 +116,10 @@
 
 @media (max-width: 420px) {
 
+    .slider {
+        column-gap: 0;
+
+    }
     .pets-content {
         position: relative;
     }
