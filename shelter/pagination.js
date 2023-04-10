@@ -34,12 +34,15 @@ function fillDivPetsArray() {
 
         if (i % 3 === 0) {
             shuffle(shuffledArr, 0, 5);
-            shuffle(shuffledArr, 6 ,7);
+            shuffle(shuffledArr, 0, 5);
+            shuffle(shuffledArr, 6, 7);
         } else if (i % 3 === 1) {
             shuffle(shuffledArr, 0, 3);
             shuffle(shuffledArr, 4, 8);
+            shuffle(shuffledArr, 4, 8);
         } else {
             shuffle(shuffledArr, 0, 1);
+            shuffle(shuffledArr, 2, 7);
             shuffle(shuffledArr, 2, 7);
         }
 
@@ -80,13 +83,13 @@ function fillCurrentPage() {
     for (let i = cardsOnPage * currPageNum - cardsOnPage; i < cardsOnPage * currPageNum; i++) {
         friendsList.append(divPetsArray[i]);
     }
-    console.log(divPetsArray)
     sliderCard = document.querySelectorAll(".slider_card");
     sliderCard.forEach(element =>
         element.addEventListener('click', event => showModal(event))
     );
 }
 
+console.log(divPetsArray);
 
 function generateCard(array, index) {
     const divCard = document.createElement('div');
