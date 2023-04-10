@@ -63,7 +63,9 @@ function shuffle(array, startPos, endPos) {
 }
 
 function cardCountOnResize() {
+    currPageNum = 1;
     clear();
+    moveFirst();
     if (window.innerWidth >= 1240) {
         cardsOnPage = 8;
     } else if (window.innerWidth >= 750) {
@@ -71,7 +73,6 @@ function cardCountOnResize() {
     } else {
         cardsOnPage = 3;
     }
-    currPageNum = 1;
     fillCurrentPage();
 }
 
