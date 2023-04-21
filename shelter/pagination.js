@@ -84,13 +84,14 @@ function fillCurrentPage() {
     for (let i = cardsOnPage * currPageNum - cardsOnPage; i < cardsOnPage * currPageNum; i++) {
         friendsList.append(divPetsArray[i]);
     }
+    console.log(friendsList);
     sliderCard = document.querySelectorAll(".slider_card");
     sliderCard.forEach(element =>
         element.addEventListener('click', event => showModal(event))
     );
 }
 
-console.log(divPetsArray);
+
 
 function generateCard(array, index) {
     const divCard = document.createElement('div');
@@ -119,10 +120,8 @@ function moveFirst() {
         currPage.innerHTML = currPageNum;
         clear();
         fillCurrentPage();
-
         inactivateLeftButtons();
         activateRightButtons();
-
         canMove.left = false;
         canMove.right = true;
     }
@@ -135,7 +134,6 @@ function moveLeft() {
         clear();
         fillCurrentPage();
         activateRightButtons();
-
         canMove.right = true;
     }
     if (currPageNum === 1) {
@@ -150,10 +148,8 @@ function moveRight() {
         currPageNum++;
         currPage.innerHTML = currPageNum;
         clear();
-
         fillCurrentPage();
         activateLeftButtons();
-
         canMove.left = true;
     }
     if (currPageNum === divPetsArray.length / cardsOnPage) {

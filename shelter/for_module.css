@@ -102,8 +102,8 @@
 
 @media (max-width: 890px) {
     .modal {
-        width: 682px;
-        height: 402px;
+        width: 630px;
+        height: 350px;
     }
 
     .modal-sub {
